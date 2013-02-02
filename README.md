@@ -11,10 +11,12 @@ The Traveling Santa Problem naturally decomposes into two TSP with
 side constraints (an edge can be in at most one TSP). This heuristic
 uses Concorde's Lin-Kernighan heuristic as follows:
 
-1. Run Lin-Kernighan heuristic on first path.  
+1. Run Lin-Kernighan heuristic on first path.
+
    Edge restriction: can used at most n edges from the second path.
 
-2. Run Lin-Kernighan heuristic on second path. 
+2. Run Lin-Kernighan heuristic on second path.
+
    Edge restriction: can't use any edge from the first path.
 
 
@@ -27,7 +29,7 @@ the winning team (6,526,972).
 
 ## Usage
 
-### Computing k Nearest Neighbors
+### Computing k Nearest Neighbor
 
 Since each subproblem (TSP) uses a strict subset of the edges, we need
 to explicitly list the allowed edges to Concorde. And we can't list
